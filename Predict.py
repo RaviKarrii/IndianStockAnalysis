@@ -74,7 +74,6 @@ def stock_prediction():
 def getstockdatafromQuandl(Stock,plotting = False):
     Stock1 = "NSE/"+ Stock
     print "Getting Stock history data for "+ Stock
-    quandl.ApiConfig.api_key = "47yJcrVXxz2HF1F9xuD5"
     r = quandl.get(Stock1, rows=90)
     print "Query Succesful"
     print "Writing data to CSV"
